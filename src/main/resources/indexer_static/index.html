@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<!--
+  ~ Druid - a distributed column store.
+  ~ Copyright 2012 - 2015 Metamarkets Group Inc.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<html>
+<head>
+    <title>消费者头条</title>
+    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="Description" content="Druid Indexer Coordinator Console"/>
+
+    <style type="text/css">@import "old-console/css/style.css";</style>
+    <style type="text/css">@import "old-console/css/demo_table.css";</style>
+
+    <script type="text/javascript" src="old-console/js/underscore-1.2.2.js"></script>
+    <script type="text/javascript" src="old-console/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="old-console/js/jquery.dataTables-1.8.2.js"></script>
+    <script type="text/javascript" src="old-console/js/druidTable-0.0.1.js"></script>
+    <script type="text/javascript" src="old-console/js/tablehelper-0.0.2.js"></script>
+    <script type="text/javascript" src="js/headline.js"></script>
+    <style type="text/css">
+        em {color:red}
+        tbody td {
+            max-width: 100px;
+            overflow: hidden;
+        }
+        table {
+            max-width: 1800px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <div class="heading"><h1>消费者头条</h1> </div>
+    <div style="float: right">
+        <input id="indexBtn" type="button" value="索引数据"/>
+        <div id="indexMsg"></div>
+    </div>
+    <b>搜索文本</b>:<input id="searchText" type="text" /> <input id="searchBtn" type="button" value="搜索"><br/>
+    <b>电商品类:</b><div id="tag_category"></div><br/>
+    <b>场景标签:</b><div id="tag_scene"></div><br/>
+    <b>风格标签:</b><div id="tag_style"></div><br/>
+    <b>来源标签:</b><div id="tag_source"></div><br/>
+
+    <h4>搜索结果</h4>
+    <div id="searchResult"></div>
+    <table id="resultTable"></table>
+
+</div>
+</body>
+</html>
